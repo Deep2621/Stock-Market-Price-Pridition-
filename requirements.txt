@@ -1,6 +1,7 @@
 # Core Libraries
-tensorflow==2.18.0  # Fixed package name (instead of tensorflow-intel)
-numpy==1.24.3
+tensorflow==2.18.0
+numpy>=1.26.0,<2.1.0  # Use compatible version (e.g., 1.26.0)
+setuptools>=60.0.0    # Replaces deprecated distutils
 pandas==2.0.3
 scipy==1.11.4  # Downgraded for Python 3.11 compatibility
 scikit-learn==1.4.0
